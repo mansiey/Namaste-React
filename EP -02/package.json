@@ -1,0 +1,19 @@
+{
+  "name": "ep--02",
+  "version": "1.0.0",
+  "description": "This is ep-02 of Namaste React",
+  "keywords": [
+    "React",
+    "JavaScript"
+  ],
+  "license": "ISC",
+  "author": "Mansi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
+}
