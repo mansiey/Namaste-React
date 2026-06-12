@@ -7,9 +7,16 @@ root.render(heading);
 
 console.log(typeof heading);
 
-//elements using jsx
+// react elements using jsx
 
 const jsxHeading = <h1> Namaste React using JSX. </h1>
 root.render(jsxHeading);
 console.log(typeof jsxHeading);
 
+//react component 
+
+const HeadingComponent = () => {
+    return <h1> Namaste React functional component</h1>;
+}
+
+root.render(<HeadingComponent />);

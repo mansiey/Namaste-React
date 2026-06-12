@@ -733,7 +733,7 @@ const heading = /*#__PURE__*/ (0, _reactDefault.default).createElement('h1', {
 const root = (0, _clientDefault.default).createRoot(document.getElementById('root'));
 root.render(heading);
 console.log(typeof heading);
-//elements using jsx
+// react elements using jsx
 const jsxHeading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
     children: " Namaste React using JSX. "
 }, void 0, false, {
@@ -743,6 +743,24 @@ const jsxHeading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
 }, undefined);
 root.render(jsxHeading);
 console.log(typeof jsxHeading);
+//react component 
+const HeadingComponent = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: " Namaste React functional component"
+    }, void 0, false, {
+        fileName: "script.js",
+        lineNumber: 19,
+        columnNumber: 12
+    }, undefined);
+};
+_c = HeadingComponent;
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingComponent, {}, void 0, false, {
+    fileName: "script.js",
+    lineNumber: 22,
+    columnNumber: 13
+}, undefined));
+var _c;
+$RefreshReg$(_c, "HeadingComponent");
 
   $parcel$ReactRefreshHelpers$a0da.postlude(module);
 } finally {
