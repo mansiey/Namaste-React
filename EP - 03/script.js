@@ -13,10 +13,22 @@ const jsxHeading = <h1> Namaste React using JSX. </h1>
 root.render(jsxHeading);
 console.log(typeof jsxHeading);
 
+const JsxHeading = () => {
+    return <h1> Namaste React using JSX. </h1> ;          //same as above but in component form
+};
+
+//using react element inside component
+const name = <h1> Mansi </h1>;
+
 //react component 
+//component inside componet ==> component composition
 
 const HeadingComponent = () => {
-    return <h1> Namaste React functional component</h1>;
-}
+    return <div>  
+        <JsxHeading />    
+        {name}
+        <h1> Namaste React functional component</h1>
+    </div>
+};
 
 root.render(<HeadingComponent />);

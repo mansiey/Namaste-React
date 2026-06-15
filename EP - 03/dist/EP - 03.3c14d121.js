@@ -743,24 +743,58 @@ const jsxHeading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
 }, undefined);
 root.render(jsxHeading);
 console.log(typeof jsxHeading);
-//react component 
-const HeadingComponent = ()=>{
+const JsxHeading = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        children: " Namaste React functional component"
+        children: " Namaste React using JSX. "
     }, void 0, false, {
         fileName: "script.js",
-        lineNumber: 19,
+        lineNumber: 17,
+        columnNumber: 12
+    }, undefined); //same as above but in component form
+};
+_c = JsxHeading;
+//using react element inside component
+const name = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+    children: " Mansi "
+}, void 0, false, {
+    fileName: "script.js",
+    lineNumber: 21,
+    columnNumber: 14
+}, undefined);
+//react component 
+//component inside componet ==> component composition
+const HeadingComponent = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(JsxHeading, {}, void 0, false, {
+                fileName: "script.js",
+                lineNumber: 28,
+                columnNumber: 9
+            }, undefined),
+            name,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: " Namaste React functional component"
+            }, void 0, false, {
+                fileName: "script.js",
+                lineNumber: 30,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "script.js",
+        lineNumber: 27,
         columnNumber: 12
     }, undefined);
 };
-_c = HeadingComponent;
+_c1 = HeadingComponent;
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingComponent, {}, void 0, false, {
     fileName: "script.js",
-    lineNumber: 22,
+    lineNumber: 34,
     columnNumber: 13
 }, undefined));
-var _c;
-$RefreshReg$(_c, "HeadingComponent");
+var _c, _c1;
+$RefreshReg$(_c, "JsxHeading");
+$RefreshReg$(_c1, "HeadingComponent");
 
   $parcel$ReactRefreshHelpers$a0da.postlude(module);
 } finally {
