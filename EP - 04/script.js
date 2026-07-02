@@ -1,16 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import logo from "./GharKhana_Logo.png";
 
 const Header = () => {
     return (
         <div className="header">
-            <div className="logo">
-                <img src="./GharKhana_Logo.png" alt="Logo"/>
+            <div className="logo-container">
+                <img className="logo" src="https://png.pngtree.com/template/20190309/ourmid/pngtree-modern-kitchen-logo-image_65849.jpg" alt="Logo" />
             </div>
 
-            <div className="nav-items">
-                <ul>
+            <div>
+                <h1> WELCOME </h1>
+            </div>
+
+
+            <div className="nav">
+                <ul className="nav-items">
                     <li> Craving? </li>
                     <li> Cart </li>
                     <li> About Us </li>
@@ -20,15 +24,24 @@ const Header = () => {
     )
 }
 
+const Kitchens = () => {
+    return (
+        <div className="kitchens">
+            <h3> Kithen's Name </h3>
+            <img />
+        </div>
+    )
+}
 const Body = () => {
     return (
         <div className="body">
             <div className="search">
-
+                {/* <input> Choose Your Kitchen </input>
+                <button> search </button> */}
             </div>
 
-            <div className="kitchenContainer">
-
+            <div className="kitchen-container">
+                <Kitchens />
             </div>
         </div>
     )
@@ -38,7 +51,7 @@ const Body = () => {
 const Footer = () => {
     return (
         <div className="footer">
-            
+
         </div>
     )
 }
@@ -46,7 +59,8 @@ const Footer = () => {
 const AppLayout = () => {
     return (
         <div className="app">
-        <Header />
+            <Header />
+            <Body />
 
         </div>
     )

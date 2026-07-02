@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 600;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin: 12px;
+    padding: 12px 26px;
+    border-radius: 12px;
+    
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 24px 30px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 80vw;
+    margin: 12px;
+    padding: 12px 26px;
+    border-radius: 12px;
+}
+.search {
+    display: flex;
+    padding: 10px;
+}
+
+
+.kitchens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    width: 250px;
+    height: 300px;
+    padding: 10px;
+
+}

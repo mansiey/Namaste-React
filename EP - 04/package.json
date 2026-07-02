@@ -10,7 +10,8 @@
   "author": "Mansi Singh",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx parcel index.html"
   },
   "devDependencies": {
     "parcel": "^2.16.4"
