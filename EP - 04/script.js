@@ -27,7 +27,11 @@ const Header = () => {
 const Kitchens = () => {
     return (
         <div className="kitchens">
-            <h3> Kithen's Name </h3>
+            <h4> Rating : 4.4 </h4>
+            <img alt="Biryanii" src="https://static.apps.ristaapps.com/b/b646d853-c880-4b1f-a032-202f2710162a/images/68428f5710badf1a6227f1c2/original.jpg" ></img>
+            <h3> Meghna's Kitchen </h3>
+            <h4>  Hyderabadi, and North Indian </h4>
+            <h4> 30-35 minutes </h4>
             <img />
         </div>
     )
@@ -35,12 +39,25 @@ const Kitchens = () => {
 const Body = () => {
     return (
         <div className="body">
-            <div className="search">
-                {/* <input> Choose Your Kitchen </input>
-                <button> search </button> */}
-            </div>
+            <div className="search"> Search </div>
 
             <div className="kitchen-container">
+                <Kitchens />
+                <Kitchens />
+                <Kitchens />
+                <Kitchens />
+                <Kitchens />
+                <Kitchens />
+                <Kitchens />
+                <Kitchens />
+                <Kitchens />
+                <Kitchens />
+                <Kitchens />
+                <Kitchens />
+                <Kitchens />
+                <Kitchens />
+                <Kitchens />
+                <Kitchens />
                 <Kitchens />
             </div>
         </div>
@@ -61,6 +78,7 @@ const AppLayout = () => {
         <div className="app">
             <Header />
             <Body />
+            <Footer />
 
         </div>
     )
@@ -68,3 +86,4 @@ const AppLayout = () => {
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<AppLayout />);
+
